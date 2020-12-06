@@ -50,7 +50,7 @@ module Thermos
 	item ThermoMugCuppa
 	{
 		FatigueChange 		= -50,
-		HungerChange 		= -10,
+		HungerChange 		= -5,
 		Weight 		= 1,
 		Type 		= Food,
 		UnhappyChange 		= -5,
