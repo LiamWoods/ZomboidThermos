@@ -1,0 +1,15 @@
+module Base
+{
+	recipe Make Hot Coffee
+	{
+		FullKettle=2,
+		destroy Coffee2,
+		destroy ThermoMug,
+		Sugar=1,
+		Result 		: ThermoMugCuppa,
+		Time 		: 30.0,
+		CanBeDoneFromFloor 		: true,
+		Heat 		: -0.22,
+		Category 		: Cooking,
+	}
+}

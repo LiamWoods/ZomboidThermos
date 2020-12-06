@@ -1,0 +1,60 @@
+module Thermos
+{
+	imports
+	{
+		Base,
+	}
+	item ThermoMug
+	{
+		Weight 		= 0.3,
+		CanStoreWater 		= TRUE,
+		Type 		= Normal,
+		DisplayName 		= Empty Thermo Mug,
+		ReplaceOnUseOn 		= WaterSource-WaterThermoMug,
+		Icon 		= ThermoMug,
+		RainFactor 		= 0.2,
+		Tooltip 		= Tooltip_item_RainFromGround,
+		StaticModel 		= Mug,
+	}
+	item WaterThermoMug
+	{
+		IsWaterSource 		= TRUE,
+		Weight 		= 1.0,
+		CanStoreWater 		= TRUE,
+		Type 		= Drainable,
+		UseWhileEquipped 		= FALSE,
+		UseDelta 		= 0.1,
+		DisplayName 		= ThermoMug of Water,
+		ReplaceOnDeplete 		= ThermoMug,
+		ReplaceOnUseOn 		= WaterSource-WaterThermoMug,
+		Icon 		= ThermoMug,
+		IsCookable 		= TRUE,
+		RainFactor 		= 0.2,
+		Tooltip 		= Tooltip_item_RainFromGround,
+		CustomContextMenu 		= Drink,
+		CustomEatSound 		= DrinkingFromBottle,
+		StaticModel 		= Mug,
+	}
+	item ThermoMugCuppa
+	{
+		FatigueChange 		= -10,
+		HungerChange 		= -2,
+		Weight 		= 1.5,
+		Type 		= Food,
+		UnhappyChange 		= -2,
+		ThirstChange 		= -20,
+		DisplayName 		= Hot Coffee,
+		StressChange 		= -3,
+		ReplaceOnUse 		= ThermoMug,
+		Icon 		= ThermoMugCuppa,
+		CustomContextMenu 		= Drink,
+		CustomEatSound 		= DrinkingFromBottle,
+		Carbohydrates 		= 0.25,
+		Proteins 		= 0.05,
+		Lipids 		= 0,
+		Calories 		= 4,
+		CantBeFrozen 		= TRUE,
+		UseDelta 		= 0.25,
+		StaticModel 		= Mug,
+	}
+}
