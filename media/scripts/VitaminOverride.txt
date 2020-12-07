@@ -1,0 +1,17 @@
+module Base {
+
+	item PillsVitamins
+	{
+        FatigueChange	=	-10,
+		Weight	=	0.2,
+        UseDelta	=	0.5,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		DisplayName	=	Vitamins,
+		Icon	=	Vitamins,
+		Tooltip = Tooltip_Vitamins,
+		StaticModel = PillBottle,
+		Medical = TRUE,
+		AttachmentType = Knife
+	}
+}

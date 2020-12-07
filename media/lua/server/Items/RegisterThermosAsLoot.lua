@@ -1,4 +1,4 @@
-require 'Items/Distributions'
+require 'Items/SuburbsDistributions'
 
 function registerAsLoot(item, chance, sub1, sub2)
   table.insert(SuburbsDistributions[sub1][sub2].items, item);
@@ -15,6 +15,8 @@ registerAsLoot(iReg, 5.0, "all", "bin");
 registerAsLoot(iReg, 5.0, "all", "fridge");
 registerAsLoot(iReg, 100.0, "bathroom", "all");
 registerAsLoot(iReg, 100.0, "bedroom", "sidetable");
+registerAsLoot(iReg, 100.0, "all", "inventorymale");
+registerAsLoot(iReg, 100.0, "all", "inventoryfemale");
 
 -- Water Thermos
 iReg = "Thermos.WaterThermoMug"
